@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+:root {
+  --colour-primary: #aac6fd;
+  --colour-secondary: #ffffff;
+  --colour-tertiary: #646881;
+
+  --colour-font-primary: var(--colour-tertiary);
+
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Abril Fatface", cursive;
+
+  --fs-small: 1.25rem;
+  --fs-medium: 1.75rem;
+  --fs-large: 2.32rem;
+
+  --spacer: 2.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--colour-primary);
+  color: var(--colour-font-primary);
+  font-family: var(--ff-primary);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.important,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-secondary);
+}
+
+/* Utilities */
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  border-radius: 1rem;
+  background-color: var(--colour-primary);
+  border: 2px solid var(--colour-tertiary);
+  padding: 0.4rem 2rem;
+  max-width: 15rem;
+  width: 100%;
+  text-align: center;
+}
+
+.button--inverted {
+  background-color: var(--colour-tertiary);
+  border: 2px solid var(--colour-primary);
+  color: var(--colour-primary);
+}
+
+.button--font-small {
+  font-size: var(--fs-small);
+}
+
+/* Write your styling below */
+
+.header {
+  background-color: var(--colour-secondary);
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.header__logo {
+  order: 2;
+}
+
+.header__nav-item {
+  font-size: var(--fs-medium);
+}
+
+.header__nav-item:first-child {
+  order: 1;
+}
+
+.header__nav-item:nth-child(3) {
+  order: 3;
+}
+
+.header__banner {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  z-index: -1;
+}
+
+.hero {
+  width: 100%;
+  padding: 0 1rem;
+  gap: 1.625rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    margin-bottom: 7.5rem;
+  }
+}
+
+.hero__title {
+  font-size: var(--fs-large);
+  text-align: center;
+  margin-bottom: var(--spacer);
+}
+
+.hero__intro-text {
+  font-size: var(--fs-small);
+  margin-bottom: var(--spacer);
+  max-width: 34.125rem;
+}
+
+.hero__buttons {
+  gap: 0.5rem;
+}
+
+.hero__image {
+  width: 330px;
+  max-width: 100%;
+}
+
+.recent,
+.featured {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent__heading,
+.featured__heading {
+  font-size: var(--fs-large);
+}
+
+.snippet {
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+  margin: 1.5rem;
+}
+
+.snippet__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem 0.75rem 1rem 0.75rem;
+}
+
+.snippet__title {
+  font-size: var(--fs-large);
+  text-align: center;
+}
+
+.snippet__image {
+  max-width: 360px;
+}
+
+.snippet__body {
+  max-width: 360px;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .snippet {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 61.25rem;
+  }
+
+  .snippet__body {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .snippet__container {
+    padding: 2rem;
+  }
+}
+
+.footer {
+  background-color: var(--colour-secondary);
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 70px;
+  width: 100%;
+}
