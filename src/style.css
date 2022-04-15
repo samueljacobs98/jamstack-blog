@@ -243,6 +243,23 @@ h6 {
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    padding: 0 6rem;
+  }
+}
+
+.article > p {
+  line-height: 180%;
+  font-size: var(--fs-small);
+}
+
+.article > figure {
+  margin: 2rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .article__heading,
