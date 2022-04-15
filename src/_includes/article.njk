@@ -1,0 +1,19 @@
+---
+layout: 'base.njk'
+---
+
+<article class="article flex-group">
+  <h1 class="article__heading">{{ title }}</h1>
+  <figure class="article__figure">
+    <img
+      class="article__image"
+      src="{{ image }}"
+      alt="{{ imageAlt }}"
+    />
+    <figcaption class="article__figure-caption">
+      {{ imageAlt }}
+    </figcaption>
+  </figure>
+
+  {{ content | safe }}
+</article>

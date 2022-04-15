@@ -1,0 +1,32 @@
+<section class="hero flex-group">
+  <div class="hero__content">
+    <h1 class="hero__title">Thoughts on Photography</h1>
+    <div class="hero__intro">
+      <p class="hero__intro-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non vitae sit
+        et odio aliquam hendrerit nunc. Nunc eros, euismod platea dui sagittis
+        congue vitae pellentesque. Risus, arcu eleifend erat nunc eu.
+      </p>
+      <br />
+      <p class="hero__intro-text">
+        Quam eu neque pulvinar rutrum odio. Scelerisque curabitur volutpat
+        ultricies risus id. Posuere semper arcu ornare dictum mollis. Sem donec
+        vitae congue nulla donec volutpat ullamcorper lacus, dui.
+      </p>
+    </div>
+    <div class="hero__buttons flex-group">
+      <button class="button button--font-small">Featured articles</button>
+      <button class="button button--font-small button--inverted">
+        Most recent articles
+      </button>
+    </div>
+  </div>
+  <img class="hero__image" src="src/assets/images/hero.jpg" alt="" />
+</section>
+<section class="featured flex-group">
+  <h2 class="featured__heading">Featured Articles</h2>
+  {%- for post in collections.featured | reverse -%}
+    {% include 'article-snippet.njk' %}
+  {%- endfor -%}
+</section>
+

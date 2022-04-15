@@ -1,0 +1,11 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+
+<section class="recent flex-group">
+  <h2 class="recent__heading">Featured Articles</h2>
+  {%- for post in collections.post | reverse -%}
+    {% include 'article-snippet.njk' %}
+  {%- endfor -%}
+</section>
