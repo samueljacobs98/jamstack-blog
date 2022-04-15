@@ -1,7 +1,7 @@
 {
   "name": "jamstack-blog",
   "version": "1.0.0",
-  "description": "A template for building JAMstack applications using eleventy and netlify. !! A work in progress !!",
+  "description": "A Blog built with JAMstack",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
