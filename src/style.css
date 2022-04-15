@@ -47,7 +47,7 @@ select {
 
 a,
 a:visited {
-  color: inherit;
+  color: var(--colour-font-primary);
   text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ h6 {
 .button--inverted {
   background-color: var(--colour-tertiary);
   border: 2px solid var(--colour-primary);
-  color: var(--colour-primary);
+  color: var(--colour-primary) !important;
 }
 
 .button--font-small {

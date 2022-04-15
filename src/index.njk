@@ -20,15 +20,15 @@ layout: "base.njk"
       </p>
     </div>
     <div class="hero__buttons flex-group">
-      <button class="button button--font-small">Featured articles</button>
-      <button class="button button--font-small button--inverted">
+      <a href="#featured" class="button button--font-small">Featured articles</a>
+      <a href="/blog" class="button button--font-small button--inverted">
         Most recent articles
-      </button>
+      </a>
     </div>
   </div>
   <img class="hero__image" src="/assets/images/hero.jpg" alt="" />
 </section>
-<section class="featured flex-group">
+<section id="featured" class="featured flex-group">
   <h2 class="featured__heading">Featured Articles</h2>
   {%- for post in collections.featured | reverse -%}
     {% include 'article-snippet.njk' %}
