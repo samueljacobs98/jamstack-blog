@@ -1,9 +1,7 @@
 # JAMstack Blog with Eleventy and Netlify CMS
 
-<figure>
-<img src="./read-me-assets/images/homeScreenshot.png">
-<figurecaption>A screenshot of the live site.<figurecaption>
-</figure>
+![](./read-me-assets/images/homeScreenshot.png)
+_A screenshot of the live site._
 
 ## Project Overview
 
@@ -15,15 +13,11 @@ The fundamental design of this website was to create a page that utilised standa
 
 Using the Netlify CMS, implemented in the admin file, a secure admin section of the site was added, enabling any designated user to access the admin interface, thus enabling them to create new, edit existing, and delete old posts on the blog.
 
-<figure>
-<img src="./read-me-assets/images/cmsScreenshot.png">
-<figurecaption>A screenshot of the Netlify CMS for managing the content of the blog.</figurecaption>
-</figure>
+![](./read-me-assets/images/cmsScreenshot.png)
+_A screenshot of the Netlify CMS for managing the content of the blog._
 
-<figure>
-<img src="./read-me-assets/images/newArticleScreenshot.png">
-<figurecaption>A screenshot of adding a new post via the Netlify CMS.<figurecaption>
-</figure>
+![](./read-me-assets/images/newArticleScreenshot.png)
+_A screenshot of adding a new post via the Netlify CMS._
 
 ## Links to Project
 
